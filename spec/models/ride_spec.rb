@@ -5,9 +5,9 @@ describe Ride do
 
   it 'belongs to a passenger' do
     passenger = Passenger.create
+    binding.pry
     ride.passenger = passenger
     ride.save
-
     expect(passenger.rides).to include(ride)
   end
 
